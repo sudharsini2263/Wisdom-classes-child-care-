@@ -210,6 +210,26 @@
 <a href="https://api.whatsapp.com/send?phone=919004332347" target="_blank" class="whatsapp-btn">
     💬
 </a>
+    <script>
+function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var cls = document.getElementById("class").value;
+    var purpose = document.getElementById("purpose").value;
+    var source = document.getElementById("source").value;
+
+    var url = "https://api.whatsapp.com/send?phone=919004332347&text="
+        + "📌 Admission Enquiry%0A"
+        + "Name: " + name + "%0A"
+        + "Phone: " + phone + "%0A"
+        + "Class: " + cls + "%0A"
+        + "Purpose: " + purpose + "%0A"
+        + "Heard From: " + source;
+
+    window.open(url, "_blank");
+}
+</script>
+
 
 </body>
 </html>
